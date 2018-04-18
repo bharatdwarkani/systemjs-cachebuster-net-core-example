@@ -66,8 +66,9 @@
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script> 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="~/js/plugins/system.cachebuster.js" asp-append-version="true"></script>
+    <a href="~/js/others/system.cachebuster.json">~/js/others/system.cachebuster.json</a>
     <script>
         System.import('ts/app.ts').catch(console.error.bind(console));
     </script>

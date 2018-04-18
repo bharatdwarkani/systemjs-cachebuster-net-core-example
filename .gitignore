@@ -7,7 +7,6 @@ publish
 *.pubxml 
 *.user
 *.bat  
-node_modules   
-lib
+node_modules  
 dist  
 system.cachebuster.json

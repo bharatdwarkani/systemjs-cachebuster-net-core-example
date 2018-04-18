@@ -3,12 +3,13 @@
   "name": "asp.net",
   "private": true,
   "dependencies": {
-    "systemjs": "0.21.3"
+    "systemjs": "0.21.3",
+    "systemjs-cachebuster": "1.0.14"
   },
 
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-clean": "0.3.2",
-    "typescript": "2.3.4" 
+    "gulp": "^3.9.1", 
+    "gulp-replace": "0.6.1",
+    "typescript": "2.3.4"
   }
   }
