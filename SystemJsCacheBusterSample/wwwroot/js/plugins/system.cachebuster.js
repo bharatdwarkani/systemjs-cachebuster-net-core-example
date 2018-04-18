@@ -47,7 +47,7 @@
         }
 
         return loadHashTablePromise = new Promise(function(resolve, reject) {
-            var url = "/" + jsonFileName + "?v=" + new Date().valueOf();
+            var url = "/js/others/" + jsonFileName + "?v=" + new Date().valueOf();
             log("Loading hash table from: " + url);
             var oReq = new XMLHttpRequest();
             oReq.open("GET", url);
@@ -68,11 +68,9 @@
     function patchSystemLocate() {
         System.locate = function (load) {
             var me = this;
-
             return loadHashTable().then(function() {
                 return systemLocate.call(me, load).then(function (address) {
-                    var url = address;
-
+                    var url = address; 
                     var relUrl = (startsWith(url, baseUrl) ? relUrl = url.substring(baseUrl.length) : url);
                     var entry = hashTable[relUrl];
 
