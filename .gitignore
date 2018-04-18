@@ -1,0 +1,12 @@
+bin
+obj
+packages
+.vs/
+site
+publish 
+*.pubxml 
+*.user
+*.bat  
+node_modules  
+dist  
+system.cachebuster.json

@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "name": "asp.net",
+  "private": true,
+  "dependencies": {
+    "systemjs": "0.21.3",
+    "systemjs-cachebuster": "1.0.14"
+  },
+
+  "devDependencies": {
+    "gulp": "^3.9.1", 
+    "gulp-replace": "0.6.1",
+    "typescript": "2.3.4"
+  }
+  }
